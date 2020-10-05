@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/alerta.js"></script>
+    <script src="./js/fecha.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/catalgo.js"></script>
+    <title>Tienda EDC</title>
+  </head>
+  <body onload="actualizarData()">
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"> Tienda EDC</a>
+          </div>
+          <ul class="nav navbar-nav">
+
+            <li><a href="#"> </a></li>
+             <li class="active"><a href="#"> <span class="glyphicon glyphicon-home" onmouseover="alert(':)')"  ></span> </a></li>
+            <li><a href="#"> <span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a></li>
+            <li><a href="#"> <span class="glyphicon glyphicon-usd"></span> Vender</a></li>
+            <li><a href="#"> <span class="glyphicon glyphicon-question-sign"></span>  Ayuda</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Crear cuenta</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesión</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  <main>
+    <div id="carrito-wrap" class="main">
+
+    <div id="carrito-productos" class="main" ></div>
+  </main>
+    <div id="carrito-items" class="left"  ></div>
+  <aside class="left">
+    
+<p> Carrito De compras <span class="glyphicon glyphicon-shopping-cart"></span> </i> </p>
+
+  </aside>
+      <div id="formulario" class="container">
+ 
+
+    <h2>Catalago<span class="glyphicon glyphicon-barcode"></span> </h2>
+
+
+<form class="form-inline">
+ <div class="input-group">
+ <span class="input-group-addon" id="basic-addon1">Descripción</span>
+ <input type="text" class="form-control" placeholder="descripcion" id="descripcion">
+ </div>
+
+ <div class="input-group">
+<span class="input-group-addon"" id="basic-addon1">Precio</span>
+<input type="number" class="form-control" placeholder="precio" id="precio">
+</div>
+
+
+</form>
+
+<div id="fbotones" class="btn-group" role="group">
+    <button type="button" onclick="guardarDatos()" class="btn btn-primary">Guardar</button>
+    <button type="button" onclick="recuperarDatos()" class="btn btn-success"> Mostrar</button>   
+    <button type="button" onclick="eliminarTodo()" class="btn btn-danger"> Eliminar </button>
+</div>
+
+<ul id="catalago" class="list-group">
+</ul>
+
+</div>
+  
+</body>
+<script>
+  
+  console.info( "Web-App version alpaha" ); 
+  
+  </script>
+  
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+</html>
